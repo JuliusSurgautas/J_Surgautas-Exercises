@@ -7,17 +7,10 @@ console.log(newFruits);
 
 
 
-
-
-
-
-
-
-
-
-
 function removeDuplicates(newFruits) {
     return newFruits.filter((item,
         index) => newFruits.indexOf(item) === index);
 }
 console.log(removeDuplicates(newFruits));
+
+// praleista
