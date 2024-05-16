@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Registration Form</title> 
+    <link rel="stylesheet" 
+          href="style.css"> 
+</head> 
+  
+<body> 
+    <div class="main"> 
+        <h1>Registration</h1> 
+
+        <form action=""> 
+            <table>
+         <td>
+ <tr>
+            <label for="first">Full Name</label> 
+            <input type="text" id="first" 
+                   name="first" 
+                   placeholder="Enter your first name" required> 
+</tr>
+<tr>
+            <label for="last">User Name</label> 
+            <input type="text" id="last" 
+                   name="last" 
+                   placeholder="Enter your last name" required> 
+  </tr>                 
+  </td>
+
+<td>
+    <tr>
+   
+            <label for="email">Email:</label> 
+            <input type="email" id="email" 
+                   name="email" 
+                   placeholder="Enter your email" required> 
+                   </tr>
+   <tr>
+            <label for="dob">Date of Birth:</label> 
+            <input type="date" 
+                   id="dob" name="dob" 
+                   placeholder="Enter your DOB" required> 
+             </tr>      
+  </td>
+  <td>
+    <tr>
+
+            <label for="password">Password:</label> 
+            <input type="password" id="password" 
+                   name="password"
+                   placeholder="Enter your password"
+                   pattern= 
+                   "^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required                    
+                   title="Password must contain at least one number,  
+                       one alphabet, one symbol, and be at  
+                       least 8 characters long"> 
+
+     </tr>      
+ 
+  <tr>
+            <label for="repassword">Re-type Password:</label> 
+            <input type="password" id="repassword" 
+                   name="repassword" 
+                   placeholder="Re-Enter your password" required> 
+            <span id="pass"></span> 
+  </tr>
+  </td>
+  <td>
+    <tr>
+            <label for="mobile">Contact:</label> 
+            <input type="text" id="mobile" 
+                   name="mobile" 
+                   placeholder="Enter your Mobile Number" required 
+                   maxlength="10"> 
+
+  </tr>
+  <tr>
+            <label for="gender">Gender:</label> 
+            <select id="gender" name="gender" required> 
+                <option value="male">Male</option> 
+                <option value="female">Female</option> 
+                <option value="other">Prefer not to say</option> 
+            </select> 
+  </tr>
+      </td>      <div class="wrap"> 
+                <button type="submit" onclick="solve()"> 
+                  Submit 
+                  </button> 
+            </div> 
+          </table>  
+        </form> 
+    </div>
+
+
+    <script src="script.js"></script> 
+</body> 
+  
+</html>
